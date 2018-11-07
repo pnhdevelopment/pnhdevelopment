@@ -1,0 +1,174 @@
+nav{
+	background: #2f2f2f;
+}
+
+
+nav div {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+#toggleIcon{
+  font-size:30px;
+  cursor:pointer;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+a.closebtn {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 36px;
+    margin-left: 50px;
+    cursor: pointer;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+a.closebtn:hover {
+    color: #00aeef;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    /*cursor: pointer;*/
+}
+
+#text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+
+.info-item{
+    color: white;
+    width: 250px;
+}
+
+.info-item a{
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.info-item a:hover {
+    color: #00aeef;
+}
+
+
+
+
+
+
+
+
+
+.link-wrapper {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  margin-left: 1.5rem;
+  height: 55px;
+  margin-left: 1.5rem;
+}
+
+
+.link-wrapper {
+  height: 55px;
+}
+
+
+.normal-underline,
+.custom-underline {
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.normal-underline,
+.normal-underline:hover {
+  color: #444;
+  text-decoration: underline;
+}
+
+.custom-underline,
+.custom-underline:hover,
+.custom-underline:focus,
+.custom-underline:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+.custom-underline::after {
+  content: "";
+  position: absolute;
+  margin-top: 1rem;
+}
+
+.link-wrapper .custom-underline::after {
+  top: 65%;
+  height: 2px;
+  width: 0%;
+  left: 0%;
+  background-color: white;
+  transition: 0.2s;
+}
+
+.link-wrapper:hover .custom-underline::after {
+  width: 100%;
+  transition: 0.3s ease all;
+  background-color: #00aeef;
+}
+
+.link-wrapper:hover a{
+    color: #00aeef;
+    transition: 0.3s;
+}

@@ -21,6 +21,11 @@
     "@angular/platform-browser-dynamic": "^6.0.3",
     "@angular/router": "^6.0.3",
     "core-js": "^2.5.4",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-svgmin": "^2.1.0",
+    "gulp-svgstore": "^7.0.0",
+    "ngx-pagination": "^3.1.1",
     "rxjs": "^6.0.0",
     "zone.js": "^0.8.26"
   },

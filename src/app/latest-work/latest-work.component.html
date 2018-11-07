@@ -1,0 +1,46 @@
+<section class="py-2">
+	
+	<div class="container">
+		
+		<!-- Header -->
+		<div class="py-2">
+			<h1 class="text-center">Latest Work</h1>
+			<div class="underline">
+				<img class="icon" src="assets/circle.svg">
+			</div>
+		</div>
+		
+		<!-- Each item -->
+		<div class="row mb-3" *ngFor="let work of works">
+			
+			<!-- Screenshot -->
+			<div class="col-12 col-md-6 mb-3 text-center">
+				<img src="{{work.screenshot}}">
+			</div>
+			
+			<!-- Info -->
+			<div class="col-12 col-md-6 text-center text-md-left">
+
+				<!-- Title -->
+				<h2>{{work.title}}</h2>
+				
+				<!-- Built with... -->
+				<div class="mb-2">
+					<em>Build with</em><br>
+					<svg class="technology icon mr-2" *ngFor="let technology of work.technologies">
+						<use attr.xlink:href="assets/sprite.svg#{{technology}}"></use>
+					</svg>
+				</div>
+				
+				<!-- Site description -->
+				<p>{{work.description}}</p>
+			</div>
+		</div>
+
+
+
+	</div>
+
+
+</section>
+

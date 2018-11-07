@@ -1,0 +1,15 @@
+section{
+	background-color: #f7f7f7;
+}
+
+h2{
+	font-size: 1.8rem;
+}
+
+.technology{
+	transition: 0.2s;
+}
+
+.technology:hover{
+	transform: scale(1.2);
+}

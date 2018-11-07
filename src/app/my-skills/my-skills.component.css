@@ -1,0 +1,11 @@
+.fa-circle{
+	margin-right: 0.3rem;
+	color: #4e4e4e;
+}
+
+.dot, .dot-open{
+	height: 16px;
+    width: 16px;
+    fill: #4e4e4e;
+    margin: 2px;
+}

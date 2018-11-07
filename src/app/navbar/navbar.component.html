@@ -1,0 +1,76 @@
+<nav class="d-md-none my-1 p-2">
+	<span id="toggleIcon" (click)="openNav()">
+		<div></div>
+		<div></div>
+		<div></div>
+	</span>
+	
+</nav>
+
+
+<div id="mySidenav" class="sidenav">
+
+    <div class="link-wrapper d-inline-block">
+      <a routerLink="/" class="custom-underline">Home</a>
+    </div> <br />
+
+   <div class="link-wrapper d-inline-block">
+    <a routerLink="about" class="custom-underline">About Me</a>
+  </div> <br />
+
+   <div class="link-wrapper d-inline-block">
+    <a routerLink="/assets/resume.pdf" class="custom-underline">My CV</a>
+  </div> <br />
+
+  <div class="link-wrapper d-inline-block">
+    <a routerLink="blog" class="custom-underline">Blog</a>
+  </div> <br />
+ 
+
+  <a class="closebtn" (click)="closeNav()">&times;</a>
+  
+
+
+  <div class="info-item text-center d-block my-3">
+    <svg class="icon">
+      <use xlink:href="assets/sprite.svg#location"></use>
+    </svg><br/>
+    <strong>Location</strong><br/>
+    <span>Sydney, Australia</span>
+  </div>
+
+  <div class="info-item text-center d-block my-3">
+    <svg class="icon">
+      <use xlink:href="assets/sprite.svg#phone"></use>
+    </svg><br/>
+    <strong>Phone</strong><br/>
+    <span>0451886213</span>
+  </div>
+
+  <div class="info-item text-center d-block my-3">
+    <svg class="icon">
+      <use xlink:href="assets/sprite.svg#email"></use>
+    </svg><br/>
+    <strong>Email</strong><br/>
+    <a href="mailto:pnhdevelopment@gmail.com">
+      <span>pnhdevelopment@gmail.com</span>
+    </a>
+  </div>
+
+  <div class="info-item text-center d-block my-3">
+    <svg class="icon">
+      <use xlink:href="assets/sprite.svg#git"></use>
+    </svg><br/>
+    <strong>Github</strong><br/>
+    <a href="https://github.com/pnhdevelopment">
+      <span>github.com/pnhdevelopment</span>
+    </a>
+  </div>
+
+</div>
+
+
+
+<div id="overlay" onclick="off()"></div>
+
+

@@ -1,0 +1,31 @@
+
+<section class="container text-center">
+	
+		<div class="loader mx-auto" *ngIf="!posts"></div>	
+	
+
+<!-- 	<div class="row" *ngIf="posts">
+		<div class="col-12 blog">
+			<div class="card" *ngFor="let post of posts | paginate: { itemsPerPage: 5, currentPage: p }">
+				<a routerLink="/blog">
+					<img class="card-img-top" src='{{post["_embedded"]["wp:featuredmedia"][0]["source_url"]}}' alt="Card image cap">
+				</a>
+				
+				<a routerLink="/blog">
+					<h1>{{post.title.rendered}}</h1>
+				</a>
+
+				<div [innerHTML]="post.excerpt.rendered"></div>
+			</div>
+		</div>
+	</div> -->
+	
+	<!-- <div class="row" *ngIf="posts">
+		<div class="col-12 text-center">
+			<pagination-controls (pageChange)="p = $event"></pagination-controls>
+		</div>
+	</div> -->
+
+
+</section>
+

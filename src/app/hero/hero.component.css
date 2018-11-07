@@ -1,0 +1,35 @@
+section.hero{
+	position: relative;
+	width: 100%;
+    padding-bottom: 50%;
+    background: linear-gradient(141deg, #f5fdff 51%, #effbff 75%);
+}
+
+section.hero img{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: 0.2s;
+}
+
+p{
+	font-style: italic;
+}
+
+.tagline{
+	position: absolute;          
+	top: 50%;                    
+	transform: translate(0, -50%);
+    text-align: center;
+    width: 100%;
+}
+
+h1{
+	color: white;
+}
+
+h2{
+	font-size: 1.6rem;
+}

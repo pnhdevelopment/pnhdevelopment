@@ -1,12 +1,24 @@
-.blog {
-   -webkit-column-count: 3; /* Chrome, Safari, Opera */
-    -moz-column-count: 3; /* Firefox */
-    column-count: 3;
+
+@media (max-width: 768px) {
+    .blog {
+        column-count: 2;
+        -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    	-moz-column-count: 2; /* Firefox */
+    }
+}
+
+@media (min-width: 768px) {
+    .blog {
+        column-count: 3;
+        -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    	-moz-column-count: 3; /* Firefox */
+    }
 }
 
 .card{
 	display: inline-block;
 	margin-bottom: 1rem;
+	border: none;
 }
 
 a{
@@ -17,4 +29,35 @@ a{
 
 a:hover{
 	color: #00aeef;
+}
+
+
+.excerpt{
+	text-align: left;
+    /*display: none;*/
+}
+
+.excerpt p{
+	margin: 0;
+    display: none;
+}
+
+
+.icon{
+    width: 17px;
+}
+
+
+.more-link {
+display: none !important;
+}
+
+.excerpt p{
+  margin: 0;
+  display: none;
+}
+
+
+.excerpt p.link-more{
+  display: none;
 }

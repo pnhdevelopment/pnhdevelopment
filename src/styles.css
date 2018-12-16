@@ -43,3 +43,36 @@ h1{
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+
+
+/* HEADER UNDERLINES */
+
+.fancy {
+  line-height: 1;
+  text-align: center;
+}
+    
+.fancy span {
+  display: inline-block;
+  position: relative;  
+}
+
+.fancy span:before, .fancy span:after{
+  content: "";
+  position: absolute;
+  height: 15px;
+  border-bottom: 2px solid black;
+  top: 0;
+  width: 40px;
+}
+    
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+    
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}

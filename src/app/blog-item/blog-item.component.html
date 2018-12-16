@@ -1,5 +1,37 @@
-<section class="container">
-<h1>hello</h1>
-<p>lorem</p>
+
+<section class="container text-center">
+	
+	<div class="loader mx-auto" *ngIf="!post"></div>	
+	
+
+	<div class="row" *ngIf="post">
+		<div class="col-8 my-a">
+
+				
+					<h1>{{post.title.rendered}}</h1>
+				
+				<div class="d-inline-block mr-3">
+					<svg class="icon mr-2">
+						<use xlink:href="assets/sprite.svg#calendar"></use>
+					</svg>
+					<small>{{ post.date | date }}</small>
+				</div>
+
+				<div class="d-inline-block mr-3">
+					<svg class="icon mr-2">
+						<use xlink:href="assets/sprite.svg#profile"></use>
+					</svg>
+					<small>By Pascale</small>
+				</div>
+
+				<div class="excerpt" [innerHTML]="post.excerpt.rendered"></div>
+				
+
+		</div>
+	</div>
+	
+
+
+
 </section>
 

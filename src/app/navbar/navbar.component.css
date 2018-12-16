@@ -87,26 +87,20 @@ a.closebtn:hover {
 
 
 .info-item{
-    color: white;
-    width: 250px;
+  color: white;
+  width: 250px;
+  font-size: 0.9rem;
 }
 
 .info-item a{
-    color: white;
-    text-decoration: none;
-    transition: 0.2s;
+  color: white;
+  text-decoration: none;
+  transition: 0.2s;
 }
 
 .info-item a:hover {
-    color: #00aeef;
+  color: #00aeef;
 }
-
-
-
-
-
-
-
 
 
 .link-wrapper {
@@ -114,13 +108,8 @@ a.closebtn:hover {
   display: block;
   cursor: pointer;
   margin-left: 1.5rem;
-  height: 55px;
+  height: 45px;
   margin-left: 1.5rem;
-}
-
-
-.link-wrapper {
-  height: 55px;
 }
 
 
@@ -128,7 +117,7 @@ a.closebtn:hover {
 .custom-underline {
   position: relative;
   display: inline-block;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   text-align: center;
 }

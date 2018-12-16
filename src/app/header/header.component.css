@@ -46,9 +46,7 @@
   transition: 0.2s;
 }
 
-.custom-underline:hover,
-.custom-underline:focus,
-.custom-underline:active {
+.custom-underline:hover{
   color: #00aeef;
   text-decoration: none;
 }

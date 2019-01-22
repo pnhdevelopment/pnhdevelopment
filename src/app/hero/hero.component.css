@@ -2,7 +2,7 @@ section.hero{
 	position: relative;
 	width: 100%;
     padding-bottom: 50%;
-    background: linear-gradient(141deg, #f5fdff 51%, #effbff 75%);
+    background: linear-gradient(155deg, #d7f7ff 6%, #ffedfa 88%);
 }
 
 section.hero img{
@@ -26,9 +26,9 @@ p{
     width: 100%;
 }
 
-h1{
+/*h1{
 	color: white;
-}
+}*/
 
 h2{
 	font-size: 1.6rem;

@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 
 import { AppComponent } from './app.component';
@@ -50,7 +51,8 @@ const appRoutes: Routes = [
     BrowserModule,
     RouterModule.forRoot( appRoutes ),
     HttpClientModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    ScrollToModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -9,3 +9,11 @@
     fill: #4e4e4e;
     margin: 2px;
 }
+
+.technology{
+	transition: 0.2s;
+}
+
+.technology:hover{
+	transform: scale(1.2);
+}

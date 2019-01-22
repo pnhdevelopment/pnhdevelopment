@@ -19,12 +19,21 @@ export class BlogComponent implements OnInit {
 
   ngOnInit() {
 
-  	this.url = 'http://www.pnhdevelopment-api.pnhdevelopment.com/wp-json/wp/v2/posts?_embed';
+  	this.url = 'https://www.pnhdevelopment-api.pnhdevelopment.com/wp-json/wp/v2/posts?_embed';
 
   	this.http.get(this.url).subscribe(res => {
     	this.posts = res;
   	});
 
   }
+
+  scrollUp(){
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
+  loadImg(ev){
+    ev.style.opacity = 1;
+  }
+
 
 }

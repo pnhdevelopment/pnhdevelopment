@@ -6,19 +6,24 @@
 
 	<div class="row" *ngIf="posts">
 		<div class="col-12 blog">
+
 			<div class="card" *ngFor="let post of posts | paginate: { itemsPerPage: 5, currentPage: p }">
-				<a routerLink="/blog/{{post.slug}}">
-
-					<div>
-						<img class="card-img-top" src='{{post["_embedded"]["wp:featuredmedia"][0]["source_url"]}}' alt="Card image cap" />
-					</div>
-
-
-				</a>
 				
 				<a routerLink="/blog/{{post.slug}}">
+					<!-- Image -->
+					<div *ngIf="post['_embedded']['wp:featuredmedia'][0]['source_url']" class="img-wrapper">
+						<img
+							class="w-100"
+							src='{{post["_embedded"]["wp:featuredmedia"][0]["source_url"]}}'
+							alt="Card image cap"
+							#ev (load)="loadImg(ev)"
+						/>
+					</div>
+					
+					<!-- Title -->
 					<h1>{{post.title.rendered}}</h1>
 				</a>
+
 				
 				<div class="d-inline-block mr-3">
 					<svg class="icon mr-2">
@@ -33,17 +38,19 @@
 					</svg>
 					<small>By Pascale</small>
 				</div>
-
-				<div class="excerpt" [innerHTML]="post.excerpt.rendered"></div>
-<!-- 				<a href="#">Continue reading &rarr;</a>
- -->				
+				
+				<div class="text-left">
+					<div class="excerpt" [innerHTML]="post.excerpt.rendered"></div>
+					<a routerLink="/blog/{{post.slug}}" class="continue-reading">Continue reading &rarr;</a>
+				</div>
+			
 			</div>
 		</div>
 	</div>
 	
 	<div class="row" *ngIf="posts">
 		<div class="col-12 text-center">
-			<pagination-controls (pageChange)="p = $event"></pagination-controls>
+			<pagination-controls (pageChange)="p = $event" (click)="scrollUp()"></pagination-controls>
 		</div>
 	</div>
 

@@ -1,15 +1,16 @@
 
-<section class="container text-center">
+<section class="container">
 	
 	<div class="loader mx-auto" *ngIf="!post"></div>	
 	
-
 	<div class="row" *ngIf="post">
-		<div class="col-8 my-a">
+		<div class="col-12 col-lg-8 m-auto">
 
-				
-					<h1>{{post.title.rendered}}</h1>
-				
+			<!-- Title -->
+			<h1 class="text-center">{{post.title.rendered}}</h1>
+			
+			<!-- Info -->
+			<div class="text-center mb-2">
 				<div class="d-inline-block mr-3">
 					<svg class="icon mr-2">
 						<use xlink:href="assets/sprite.svg#calendar"></use>
@@ -23,10 +24,21 @@
 					</svg>
 					<small>By Pascale</small>
 				</div>
+			</div>
 
-				<div class="excerpt" [innerHTML]="post.excerpt.rendered"></div>
+			<!-- Image -->
+			<div class="text-center mb-2 img-wrapper">
+				<img
+					#ev (load)="loadImg(ev)"
+					src='{{post["_embedded"]["wp:featuredmedia"][0]["source_url"]}}'
+					alt="Card image cap"
+				/>
+			</div>
+			
+
+			<!-- Content -->
+			<div [innerHTML]="post.content.rendered"></div>
 				
-
 		</div>
 	</div>
 	

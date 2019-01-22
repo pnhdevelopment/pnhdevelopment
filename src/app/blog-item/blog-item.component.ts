@@ -25,4 +25,8 @@ export class BlogItemComponent implements OnInit {
 
   }
 
+  loadImg(ev){
+    ev.style.opacity = 1;
+  }
+
 }

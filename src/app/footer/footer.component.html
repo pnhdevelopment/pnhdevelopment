@@ -3,7 +3,9 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-lg-5 my-auto text-center">
-				<img class="logo" src="assets/logo.svg">
+				<a routerLink="">
+					<img class="logo" src="assets/logo.svg">
+				</a>
 			</div>
 
 			<div class=" col-12 col-lg-7">
@@ -17,7 +19,7 @@
 
 					<li>
 						<div class="link-wrapper">
-							<a routerLink="" class="custom-underline">About me</a>
+							<a [ngx-scroll-to]="'#about-me'" routerLink="" class="custom-underline">About me</a>
 						</div>
 					</li>
 
@@ -35,14 +37,14 @@
 
 					<li>
 						<div class="link-wrapper">
-							<a routerLink="contact" class="custom-underline">Contact</a>
+							<a [ngx-scroll-to]="'#contact'" routerLink="" class="custom-underline">Contact</a>
 						</div>
 					</li>
 
 				</ul>
 
 				<p class="text-center text-lg-right px-3">
-					Build with
+					Built with
 					<svg class="icon">
 						<use xlink:href="assets/sprite.svg#angular"></use>
 					</svg>
@@ -55,7 +57,4 @@
 	</div>
 
 </footer>
-
-
-
 

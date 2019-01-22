@@ -16,13 +16,13 @@ export class LatestWorkComponent implements OnInit {
   	{
   		"title": "Gorgeous Cupcakes",
   		"screenshot": "http://via.placeholder.com/350x150",
-  		"description": "A Wordpress ecommerce site dedicated to my favourite cupcake recipes",
+  		"description": "A Wordpress ecommerce site dedicated to my favourite cupcake recipes.",
       "technologies": ["wordpress", "git", "bootstrap", "illustrator", "git"]
   	},
   	{
   		"title": "Scifi Film Festival",
   		"screenshot": "http://via.placeholder.com/350x150",
-  		"description": "A Wordpress site built specifically for the Sci Fi Film festival in Sydney",
+  		"description": "A Wordpress site built specifically for the Sci Fi Film festival in Sydney.",
       "technologies": ["wordpress", "git", "bootstrap", "illustrator", "git"]
   	},
   	{
@@ -46,7 +46,7 @@ export class LatestWorkComponent implements OnInit {
   	{
   		"title": "Youtube University",
   		"screenshot": "http://via.placeholder.com/350x150",
-  		"description": "A collection of educational Youtube resources dedicated to web design and web development.",
+  		"description": "A collection of educational Youtube resources dedicated to my web design journey.",
       "technologies": ["wordpress", "git", "bootstrap", "illustrator", "git"]
   	},
   	{

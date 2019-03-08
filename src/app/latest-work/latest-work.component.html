@@ -19,7 +19,7 @@
 			
 			<!-- Screenshot -->
 			<div class="col-12 col-md-6 mb-3 text-center">
-				<img src="{{work.screenshot}}">
+				<img class="screenshot" src="{{work.screenshot}}">
 			</div>
 			
 			<!-- Info -->
@@ -38,6 +38,21 @@
 				
 				<!-- Site description -->
 				<p>{{work.description}}</p>
+				 
+				<!-- Site links -->
+				<a  *ngIf="work.angularLink"
+					href="{{work.angularLink}}"
+					class="btn btn-outline-primary mr-2">
+					View Angular site
+				</a>
+
+				<a  *ngIf="work.reactLink"
+					href="{{work.reactLink}}"
+					class="btn btn-outline-primary mr-2">
+					View React site
+				</a>
+
+
 			</div>
 		</div>
 

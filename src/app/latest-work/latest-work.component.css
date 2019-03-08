@@ -13,3 +13,21 @@ h2{
 .technology:hover{
 	transform: scale(1.2);
 }
+
+.screenshot{
+	width: 100%;
+}
+
+
+a.btn-outline-primary{
+	color: black;
+	border-color: black;
+
+}
+
+a.btn-outline-primary:hover{
+	background-color: #00aeef;
+    border-color: #00aeef;
+    color: white;
+    transition: 0.3s;
+}

@@ -6,11 +6,11 @@ var path = require('path');
  
 gulp.task('svgstore', function () {
     return gulp
-        .src('*.svg')
+        .src('.svg-icons/*.svg')
         .pipe(svgmin())
         .pipe(svgstore())
         .pipe( rename({ basename: 'sprite' }) )
-        .pipe(gulp.dest('./'));
+        .pipe(gulp.dest('./svg-icons'));
 });
 
 gulp.task('default', function() {

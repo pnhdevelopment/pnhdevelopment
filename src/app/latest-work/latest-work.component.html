@@ -8,7 +8,7 @@
 
 			<div class="subtitle fancy">
 		    	<span>
-		    		<img class="icon" src="assets/circle.svg">
+		    		<img class="icon" src="assets/svg-icons/circle.svg">
 		    	</span>
 			</div>
 
@@ -18,8 +18,10 @@
 		<div class="row mb-3" *ngFor="let work of works">
 			
 			<!-- Screenshot -->
-			<div class="col-12 col-md-6 mb-3 text-center">
-				<img class="screenshot" src="{{work.screenshot}}">
+			<div class="col-12 col-md-6 mb-3">
+				<div class="screenshot-wrapper">
+					<img class="screenshot" src="{{work.screenshot}}">
+				</div>
 			</div>
 			
 			<!-- Info -->
@@ -32,7 +34,7 @@
 				<div class="mb-2">
 					<em>Build with</em><br>
 					<svg class="technology icon mr-2" *ngFor="let technology of work.technologies">
-						<use attr.xlink:href="assets/sprite.svg#{{technology}}"></use>
+						<use attr.xlink:href="assets/svg-icons/sprite.svg#{{technology}}"></use>
 					</svg>
 				</div>
 				
@@ -40,6 +42,12 @@
 				<p>{{work.description}}</p>
 				 
 				<!-- Site links -->
+				<a  *ngIf="work.regularLink"
+					href="{{work.regularLink}}"
+					class="btn btn-outline-primary mr-2">
+					View site
+				</a>
+
 				<a  *ngIf="work.angularLink"
 					href="{{work.angularLink}}"
 					class="btn btn-outline-primary mr-2">

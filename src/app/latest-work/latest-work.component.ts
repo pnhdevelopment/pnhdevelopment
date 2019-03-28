@@ -12,6 +12,10 @@ export class LatestWorkComponent implements OnInit {
   ngOnInit() {
   }
 
+  loadImg(ev){
+    ev.style.opacity = 1;
+  }
+
   works = [
   	{
   		"title": "Gorgeous Cupcakes",
@@ -22,7 +26,7 @@ export class LatestWorkComponent implements OnInit {
   	},
   	{
   		"title": "Bibletopia",
-  		"screenshot": "assets/screenshots/bibletopia-screenshot.PNG",
+  		"screenshot": "assets/screenshots/bibletopia-screenshot.png",
   		"description": "A personalised collection of educational resources dedicated to Christian scripture.",
       "technologies": ["wordpress", "git", "bootstrap", "illustrator", "git"],
       "regularLink": "http://www.bibletopia.pnhdevelopment.com"
@@ -32,31 +36,31 @@ export class LatestWorkComponent implements OnInit {
   		"screenshot": "assets/screenshots/node-knowledgebase.PNG",
   		"description": "A collection of learning resources dedicated to the wonderful world of NodeJS.",
       "technologies": ["wordpress", "git", "bootstrap", "illustrator", "git"],
-      "angularLink": "http://node-knowledge-angular.pnhdevelopment.com", 
-      "reactLink": "http://node-knowledge-react.pnhdevelopment.com"
+      "angularLink": "https://www.node-knowledgebase-angular.pnhdevelopment.com", 
+      "reactLink": "https://www.node-knowledgebase-react.pnhdevelopment.com"
   	},
   	{
   		"title": "Guy Maston",
-  		"screenshot": "assets/screenshots/guy-maston-screenshot.JPG",
+  		"screenshot": "assets/screenshots/guy-maston-screenshot.PNG",
   		"description": "An general ecommerce site. It sells baby products, electronics, books, fashion items and entertainment products.",
       "technologies": ["wordpress", "git", "bootstrap", "illustrator", "git"],
-      "angularLink": "http://guy-maston-angular.pnhdevelopment.com",
+      "angularLink": "https://www.guy-maston-angular.pnhdevelopment.com",
   	},
   	{
   		"title": "Youtube University",
-  		"screenshot": "assets/screenshots/youtube-university-screenshot.jpg",
+  		"screenshot": "assets/screenshots/youtube-university-screenshot.PNG",
   		"description": "A collection of educational Youtube resources dedicated to my web design journey.",
       "technologies": ["wordpress", "git", "bootstrap", "illustrator", "git"],
-      "angularLink": "http://youtube-university-angular.pnhdevelopment.com", 
-      "reactLink": "http://youtube-university-react.pnhdevelopment.com"
+      "angularLink": "https://www.youtube-university-angular.pnhdevelopment.com", 
+      "reactLink": "https://www.youtube-university-react.pnhdevelopment.com"
   	},
   	{
   		"title": "My Recipes",
-  		"screenshot": "assets/screenshots/my-recipes-screenshot.jpg",
+  		"screenshot": "assets/screenshots/my-recipes-screenshot.PNG",
   		"description": "A personalised collection of my favourite recipes.",
       "technologies": ["wordpress", "git", "bootstrap", "illustrator", "git"],
-      "angularLink": "http://my-recipes-angular.pnhdevelopment.com", 
-      "reactLink": "http://my-recipes-react.pnhdevelopment.com"
+      "angularLink": "https://www.my-recipes-angular.pnhdevelopment.com", 
+      "reactLink": "https://www.my-recipes-react.pnhdevelopment.com"
   	}
   ]
 

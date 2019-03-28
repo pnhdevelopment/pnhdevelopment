@@ -11,7 +11,6 @@
 		    		<img class="icon" src="assets/svg-icons/circle.svg">
 		    	</span>
 			</div>
-
 		</div>
 		
 		<!-- Each item -->
@@ -20,7 +19,11 @@
 			<!-- Screenshot -->
 			<div class="col-12 col-md-6 mb-3">
 				<div class="screenshot-wrapper">
-					<img class="screenshot" src="{{work.screenshot}}">
+					<img
+						class="screenshot"
+						src="{{work.screenshot}}"
+						#el
+						(load)="loadImg(el)" >
 				</div>
 			</div>
 			

@@ -32,6 +32,7 @@ body {
     padding-top: 60px;
     white-space: nowrap;
     overflow: hidden;
+    overflow-y: auto;
 }
 
 a.closebtn {
@@ -54,10 +55,10 @@ a.closebtn:hover {
 }
 
 
-@media screen and (max-height: 450px) {
+/*@media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-}
+}*/
 
 
 
@@ -89,7 +90,7 @@ a.closebtn:hover {
 .info-item{
   color: white;
   width: 250px;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .info-item a{

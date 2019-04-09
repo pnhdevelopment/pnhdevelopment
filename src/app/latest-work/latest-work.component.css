@@ -36,7 +36,8 @@ a.btn-outline-primary:hover{
 	width: 100%;
 	padding-bottom: 56.25%;
 	position: relative;
-	background: linear-gradient(155deg, #d7f7ff 6%, #ffedfa 88%);
+	/*background: linear-gradient(155deg, #d7f7ff 6%, #ffedfa 88%);*/
+	background: #3e3e3e;
 }
 
 
@@ -47,4 +48,8 @@ a.btn-outline-primary:hover{
 	left:0;
 	opacity: 0;
 	transition: 0.2s;
+}
+
+.screenshot-wrapper img:hover{
+	opacity: 0.5 !important;
 }

@@ -3,6 +3,7 @@ section.hero{
 	width: 100%;
     padding-bottom: 50%;
     background: linear-gradient(155deg, #d7f7ff 6%, #ffedfa 88%);
+
 }
 
 section.hero img{
@@ -20,16 +21,23 @@ p{
 
 .tagline{
 	position: absolute;          
-	top: 50%;                    
+	top: 50%;                   
 	transform: translate(0, -50%);
     text-align: center;
     width: 100%;
 }
 
-/*h1{
+h1, h2, p{
 	color: white;
-}*/
+	background: linear-gradient(to right, rgb(69, 163, 237) 0%, rgb(67, 192, 238) 100%);
+}
 
-h2{
-	font-size: 1.6rem;
+h1{ font-size: 2.5rem; }
+h2{ font-size: 1.6rem; }
+p{ font-size: 1rem; }
+
+@media (max-width: 600px){
+	h1{ font-size: 1.5rem; }
+	h2{ font-size: 1rem; }
+	p{ font-size: 0.7rem; }
 }

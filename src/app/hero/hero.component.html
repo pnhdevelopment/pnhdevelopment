@@ -1,9 +1,17 @@
 <section class="hero">
-	<img src="assets/hero.jpg" #ev (load)="loadImg(ev)">
+	<img
+		srcset="assets/hero-576w.jpg 576w, assets/hero-768w.jpg 768w, assets/hero-992w.jpg 992w, assets/hero-1200w.jpg 1200w"
+	    sizes="(max-width: 576px) 576px, (max-width: 768px) 768px, (max-width: 992px) 992px, (max-width: 1200px) 1200px"
+		src="assets/hero-1200w.jpg"
+		#ev
+		(load)="loadImg(ev)"
+	/>
 	<div class="tagline">
-		<h1>Hello, I'm Pascale</h1>
-		<h2>I'm a front end developer</h2>
-		<p>I build mobile apps and single page applications.</p>
+		<div class="tag-wrapper">
+			<h1 class="m-1 py-1 px-3 d-inline-block">Hello, I'm Pascale</h1><br>
+			<h2 class="m-1 py-1 px-3 d-inline-block">I'm a front end developer</h2><br>
+			<p class="m-1 py-1 px-3 d-inline-block">I build mobile apps and single page applications</p><br>
+		</div>
 	</div>
 </section>
 

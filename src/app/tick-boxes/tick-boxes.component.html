@@ -64,7 +64,7 @@
 					<li>Protection against Cross-Site Request Forgery (CSRF)</li>
 					<li>Use CSP without allowing unsafe-* backdoors.</li>
 					<li>Use minimal privilege for the database access</li>
-					<li>SQL prepared statements</li>
+					<li>Only use SQL prepared statements</li>
 					<li>Ensure all passwords are hashed using appropriate crypto</li>
 					<li>Consider CAPTCHA on front-end APIs </li>
 					<li>Cross-site scripting</li>
@@ -78,7 +78,6 @@
 					<li>Use HTTPS on all webpages</li>
 					<li>Use X-Frame-Option, X-XSS-Protection headers in client responses</li>
 					<li>Use HSTS responses to force TLS only access. Redirect all HTTP request to HTTPS on the server as backup.</li>
-					<li>Only use SQL prepared statements</li>
 				</ul>
 			</div>
 
@@ -101,6 +100,7 @@
 					<li>Lazy loading of images</li>
 					<li>Files are minified</li>
 					<li>Files are concatenated</li>
+					<li>Files are compressed</li>
 					<li>Optimize HTTP headers</li>
 					<li>Google PageSpeed of at least 90% for all pages</li>
 				</ul>
@@ -113,7 +113,7 @@
 					<h2>Functionality</h2>
 				</div>
 				<ul>
-					<li>Consistent site navigation</li>
+					<li>Consistent site navigation across pages</li>
 					<li>All forms work</li>
 					<li>All pages are accessible</li>
 					<li>Heading levels are easy to distinguish</li>
@@ -133,6 +133,9 @@
 					<li>Website can be nagivated with only a keyboard</li>
 					<li>All pages were tested in two or more screen readers</li>
 					<li>Language attribute is declared to improve screen reader pronunciation</li>
+					<li>Alt text is used appropriately</li>
+					<li>Captions are provided for multimedia elements</li>
+					<li>Site works in text browsers such as Lynx</li>					
 				</ul>
 
 			</div>
